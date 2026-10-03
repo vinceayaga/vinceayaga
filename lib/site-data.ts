@@ -2,8 +2,6 @@ export const site = {
   name: 'Vincent Ayaga (Vince)',
   role: 'Scientist & Writer',
   email: 'vinceayaga196@gmail.com',
-  phone: '(817) 696-1980',
-  phoneHref: '+18176961980',
   location: 'Dallas, TX',
   linkedin: 'https://www.linkedin.com/search/results/people/?keywords=Vincent%20Ayaga',
   summary:

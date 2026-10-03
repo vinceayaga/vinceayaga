@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin } from 'lucide-react'
 import { site } from '@/lib/site-data'
 
 export function Contact() {
@@ -22,13 +22,7 @@ export function Contact() {
             <Mail className="size-4" aria-hidden="true" />
             {site.email}
           </a>
-          <a
-            href={`tel:${site.phoneHref}`}
-            className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-6 py-3 text-sm font-medium transition-colors hover:bg-primary-foreground/10"
-          >
-            <Phone className="size-4" aria-hidden="true" />
-            {site.phone}
-          </a>
+
           <a
             href={site.linkedin}
             target="_blank"
