@@ -12,7 +12,7 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Vincent Ayaga — Scientist & Writer',
+  title: 'Vincent Ayaga (Vince) — Scientist & Writer',
   description:
     'Scientist and writer with 10+ years of experience across healthcare, technology, and academia. AI data training, LLM evaluation, red-teaming, and SEO content writing.',
   generator: 'v0.app',

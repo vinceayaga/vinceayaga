@@ -1,5 +1,5 @@
 export const site = {
-  name: 'Vincent Ayaga',
+  name: 'Vincent Ayaga (Vince)',
   role: 'Scientist & Writer',
   email: 'vinceayaga196@gmail.com',
   phone: '(817) 696-1980',
