@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
 import { site } from '@/lib/site-data'
 
 export function Contact() {
@@ -14,13 +14,36 @@ export function Contact() {
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
           {"I'm available for AI training and evaluation work, technical and SEO content, and medical and health writing."}
         </p>
-        <a
-          href={`mailto:${site.email}`}
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-primary-foreground px-6 py-3 text-sm font-medium text-primary transition-opacity hover:opacity-90"
-        >
-          {site.email}
-          <ArrowUpRight className="size-4" aria-hidden="true" />
-        </a>
+        <div className="mt-10 flex flex-wrap items-center gap-3">
+          <a
+            href={`mailto:${site.email}`}
+            className="inline-flex items-center gap-2 rounded-full bg-primary-foreground px-6 py-3 text-sm font-medium text-primary transition-opacity hover:opacity-90"
+          >
+            <Mail className="size-4" aria-hidden="true" />
+            {site.email}
+          </a>
+          <a
+            href={`tel:${site.phoneHref}`}
+            className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-6 py-3 text-sm font-medium transition-colors hover:bg-primary-foreground/10"
+          >
+            <Phone className="size-4" aria-hidden="true" />
+            {site.phone}
+          </a>
+          <a
+            href={site.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 px-6 py-3 text-sm font-medium transition-colors hover:bg-primary-foreground/10"
+          >
+            LinkedIn
+            <ArrowUpRight className="size-4" aria-hidden="true" />
+            <span className="sr-only">(opens in a new tab)</span>
+          </a>
+        </div>
+        <p className="mt-8 inline-flex items-center gap-2 text-sm text-primary-foreground/70">
+          <MapPin className="size-4" aria-hidden="true" />
+          Based in {site.location}
+        </p>
       </div>
     </section>
   )
